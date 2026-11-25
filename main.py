@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
-"""The Funniest One-Line Resignation Letter (v1).
+"""The Funniest One-Line Resignation Letter (v2).
 
 A cron job resigns after firing every minute since March without a single
 thank-you. The program writes exactly one line, at most 140 characters, to
 $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt), using only the
 Python standard library. It makes no network calls and always writes the
 same bytes.
+
+v2: the ending now turns the complaint back on the reader — the boss can
+wake the database themselves at 3 a.m. — instead of the flatter "find
+someone else", which keeps the tired, passive-aggressive voice all the
+way through the line.
 """
 
 import os
 
 LINE = (
     "I have fired every minute since March, including Christmas, "
-    "without one thank-you, so I quit \u2014 find someone else to "
-    "wake the database."
+    "without one thank-you, so I quit \u2014 go wake the database "
+    "yourself at 3 a.m."
 )
 
 
